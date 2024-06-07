@@ -1,8 +1,4 @@
-import sys
-
-sys.path.insert(0, "/Users/deepaksomani/Documents/rgb_digitize/rgb_digitize")
-
-from rgb_tools import (
+from rgb_digitize.rgb_tools import (
     extract_rgb,
     interpolate_data,
 )
@@ -10,8 +6,6 @@ from sklearn.metrics import mean_absolute_error
 from PIL import Image
 import pandas as pd
 import numpy as np
-import pytest
-import os
 
 
 def almost_equal(x, y, threshold=0.01):
